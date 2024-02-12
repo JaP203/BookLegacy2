@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
 import com.marisma.booklegacy.databinding.FragmentCreditBinding
+import com.marisma.booklegacy.fragments.MainFragment
 
 // TODO: Rename parameter arguments, choose names that match
 
@@ -34,7 +35,7 @@ class CreditFragment : Fragment() {
 
         val direccionesCorreo = arrayOf("correo1@example.com")
 
-        val userName = arguments?.getString("USER_NAME")
+        val userName = MainFragment.usuario
 
         binding.creditText.text = "$userName, estás usando la versión 1 de BookLegacy\n\nDescripción de la aplicación"
 

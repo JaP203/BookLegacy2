@@ -8,20 +8,31 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a nuestra aplicación de libros!
 
-Descubre una amplia variedad de libros en nuestra biblioteca virtual. Explora géneros que van desde la fantasía épica hasta la ciencia ficción futurista, desde los clásicos de la literatura mundial hasta los bestsellers más recientes.
+                Descubre una amplia variedad de libros en nuestra biblioteca virtual. Explora géneros que van desde la fantasía épica hasta la ciencia ficción futurista, desde los clásicos de la literatura mundial hasta los bestsellers más recientes.
 
-Guarda tus libros favoritos, lleva un registro de tu progreso de lectura y comparte tus opiniones con otros entusiastas de la lectura en nuestra comunidad integrada.
+                Guarda tus libros favoritos, lleva un registro de tu progreso de lectura y comparte tus opiniones con otros entusiastas de la lectura en nuestra comunidad integrada.
 
-¡Sumérgete en un mundo de historias fascinantes y deja que la magia de la lectura te transporte a lugares inimaginables!"
+                ¡Sumérgete en un mundo de historias fascinantes y deja que la magia de la lectura te transporte a lugares inimaginables!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,12 @@ import com.marisma.booklegacy.fragments.MenuFragment
 import com.marisma.booklegacy.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
+
+    companion object {
+
+        var usuario = ""
+    }
+
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
@@ -28,6 +34,8 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.nextButton.setOnClickListener {
+            usuario = binding.userEditText.text.toString()
+
             val userName = binding.userEditText.text.toString()
             val bundle = Bundle().apply {
                 putString("USER_NAME", userName)

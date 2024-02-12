@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.marisma.booklegacy.databinding.FragmentCreditBinding
+import com.marisma.booklegacy.databinding.FragmentUsuBinding
+import com.marisma.booklegacy.fragments.MainFragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +24,9 @@ class usuFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+
+    private var _binding: FragmentUsuBinding? = null
+    private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -34,7 +40,10 @@ class usuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_usu, container, false)
+        _binding = FragmentUsuBinding.inflate(inflater, container, false)
+        binding.textView2.text= "usuario: " + MainFragment.usuario
+        return binding.root
+
     }
 
     companion object {
