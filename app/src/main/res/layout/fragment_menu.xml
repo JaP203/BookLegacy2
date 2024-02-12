@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
         android:text="Username"
+        style="@style/EstiloTitulo"
+
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
@@ -23,6 +25,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Credits"
+        style="@style/EstiloBoton"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/exitButton"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +37,7 @@
         android:id="@+id/exitButton"
         android:layout_width="108dp"
         android:layout_height="wrap_content"
+        style="@style/EstiloBoton"
 
         android:layout_marginEnd="48dp"
         android:text="Exit"
@@ -47,6 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="Lista libros"
+        style="@style/EstiloBoton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -57,6 +63,8 @@
         android:layout_width="108dp"
         android:layout_height="wrap_content"
         android:text="usuario"
+        style="@style/EstiloBoton"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.681"
@@ -71,6 +79,8 @@
 
         android:layout_marginEnd="136dp"
         android:text="Favoritos"
+        style="@style/EstiloBoton"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

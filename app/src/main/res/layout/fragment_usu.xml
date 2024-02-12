@@ -10,6 +10,7 @@
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
+        style="@style/EstiloTexto"
         android:layout_height="wrap_content"
         android:text="¡Bienvenido a nuestra aplicación de libros!
 
@@ -26,6 +27,8 @@
         app:layout_constraintVertical_bias="0.499" />
 
     <TextView
+        style="@style/EstiloTitulo"
+
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
